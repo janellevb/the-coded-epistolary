@@ -1,0 +1,62 @@
+.main-dear-1 {
+    position: absolute;
+    left: 5vw;
+    top: 30vh;
+    transform-origin: top left;
+}
+
+.main-dear-2 {
+    position: absolute;
+    left: calc(5vw + 110px);
+    top: calc(30vh + 110px);
+    transform-origin: top left;
+}
+
+.a-coded-epistolary {
+    position: absolute;
+    left: calc(5vw + 70px);
+    top: calc(30vh + 240px);
+    transform-origin: top left;
+    scale: 45%;
+}
+
+.underline-big {
+    position: absolute;
+    left: calc(5vw + 350px);
+    top: calc(30vh + 340px);
+    scale: 55%;
+    transform-origin: top left;
+}
+
+a {
+    font-family: "GeistMono", serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 24px;
+}
+
+.bold-a {
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    bottom: 10vh;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in-page {
+    animation: fadeIn 0.5s ease-in;
+}
+
+
+.fade-out-page {
+    animation: fadeOut 0.5s ease-out;
+}

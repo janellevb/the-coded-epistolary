@@ -1,24 +1,20 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {HashRouter, Route, Routes} from 'react-router-dom'
-// import './index.css'
-import App from './App.tsx'
+import './index.css'
+import GalleryPage from "./pages/gallery_page.tsx";
+import MainPage from "./pages/main_page.tsx";
+import Page1 from "./pages/page1.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        {/*<Route path="/auth/login" element={<Login />} />*/}
-        {/*<Route path="/auth/signup" element={<Signup />} />*/}
-        {/*<Route path="/dashboard" element={<Dashboard />} />*/}
-        {/*<Route path="/contests/create" element={<CreateContest />} />*/}
-        {/*<Route exact path="/contests/join" element={<JoinContest />} />*/}
-        {/*<Route path="/contests/live" element={<LiveContest />} />*/}
-        {/*<Route path="/practice" element={ <Practice /> } />*/}
-        {/*<Route path="/analyze" element={ <Analyze /> } />*/}
-        {/*<Route path="/verify" element={<VerifyEmail />} />*/}
-        {/*<Route path="/profile/edit" element={<EditProfile />} />*/}
+        <Route path="/" element={<MainPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/page1" element={<Page1 />} />
+        {/*<Route path="/gallery" element={<GalleryPage />} />*/}
+        {/*<Route path="/gallery" element={<GalleryPage />} />*/}
       </Routes>
     </HashRouter>
   </StrictMode>,
